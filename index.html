@@ -1,0 +1,120 @@
+from pathlib import Path
+
+# Define the HTML content
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Station Med Spa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+        }
+        h1 {
+            color: #0077b6;
+        }
+        a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Station Med Spa</h1>
+    </header>
+    <main>
+        <p>Nestled in the vibrant heart of Texas, College Station has become more than just a bustling college town—it’s also a rising hub for advanced wellness and aesthetic treatments. For those seeking rejuvenation, self-care, and cutting-edge beauty solutions, College Station Med Spa options are expanding rapidly to meet demand.</p>
+
+        <p>Med spas, or medical spas, bridge the gap between traditional spa experiences and medical aesthetics. They offer results-driven treatments under the supervision of licensed professionals, often in relaxing, boutique-style environments. In College Station, the trend of combining luxury and technology is growing, with top-tier spas offering services tailored to diverse skincare and wellness needs.</p>
+
+        <h2>What Makes a Med Spa Unique?</h2>
+        <p>Unlike conventional day spas, a med spa provides non-invasive medical procedures using clinically tested devices and products. These include:</p>
+        <ul>
+            <li>Laser hair removal</li>
+            <li>Botox and dermal fillers</li>
+            <li>Chemical peels</li>
+            <li>Microneedling</li>
+            <li>HydraFacial treatments</li>
+            <li>Body contouring</li>
+            <li>Skin tightening</li>
+            <li>Medical-grade facials</li>
+        </ul>
+
+        <h2>Why Choose a Med Spa in College Station?</h2>
+        <p>College Station residents and visitors can now enjoy access to modern med spa services without traveling to larger cities like Houston or Austin. The local med spa scene is thriving, thanks to experienced aesthetic professionals and growing awareness of self-care and skin health.</p>
+
+        <p>Choosing a <a href="https://rawbcs.com" target="_blank">College Station Med Spa</a> allows you to experience personalized care and cutting-edge technologies in a friendly, professional environment. Whether you're a college student, a busy professional, or enjoying retirement, these treatments can help boost your confidence and support your wellness goals.</p>
+
+        <h2>Popular Treatments Available</h2>
+        <p>Among the most requested services at College Station med spas are:</p>
+        <h3>Botox and Fillers</h3>
+        <p>Botox is used to temporarily smooth wrinkles, especially around the forehead and eyes, while dermal fillers restore lost volume in areas like cheeks and lips.</p>
+
+        <h3>Laser Treatments</h3>
+        <p>Advanced laser technology helps remove unwanted hair, reduce pigmentation, and improve skin texture. These treatments are effective and offer minimal downtime.</p>
+
+        <h3>Microneedling and PRP</h3>
+        <p>Microneedling stimulates collagen production, reducing the appearance of fine lines, scars, and enlarged pores. When combined with PRP (platelet-rich plasma), the results are even more dramatic.</p>
+
+        <h3>HydraFacial</h3>
+        <p>This multi-step treatment cleanses, exfoliates, and hydrates the skin, leaving it radiant and youthful. HydraFacials are suitable for all skin types and are great before special occasions.</p>
+
+        <h2>Tips for Choosing the Right Med Spa</h2>
+        <p>When selecting a med spa in College Station, consider the following:</p>
+        <ul>
+            <li>Read online reviews and testimonials</li>
+            <li>Check credentials of medical professionals on staff</li>
+            <li>Look for before-and-after treatment photos</li>
+            <li>Schedule a consultation to discuss your goals</li>
+            <li>Evaluate the cleanliness and ambiance of the facility</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>The growth of med spas in College Station is a sign of the increasing demand for aesthetic and wellness services in a professional, relaxing setting. Whether you're seeking anti-aging treatments, clearer skin, or a confidence boost, you can find reliable, innovative solutions locally.</p>
+
+        <p>Start your journey to enhanced wellness and beauty by exploring a top-rated med spa in the area. With the right treatment plan and expert care, you can look and feel your best all year round.</p>
+
+        <p><strong>Find us on the map:</strong> <a href="https://www.google.com/maps/search/?api=1&query=a&query_place_id=ChIJi8M6gkeFRoYRY60B-EJnhNs" target="_blank">View College Station Med Spa Location</a></p>
+    </main>
+    <footer>
+        &copy; 2025 College Station Med Spa. All rights reserved.
+    </footer>
+</body>
+</html>
+"""
+
+# Save the file
+html_path = Path("/mnt/data/college-station-med-spa.html")
+html_path.write_text(html_content)
+
+html_path.name  # Return just the filename to be shown to the user
+
